@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "django-cms-template"
+version = "0.1.0"
+description = ""
+authors = ["Michel Lacerda <michel.lacerda@intip.com.br>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2"
+django-cms = "^3.9.0"
+django-sekizai = "^3.0.1"
+django-filer = "^2.1.2"
+djangocms-text-ckeditor = "^4.0.0"
+djangocms-link = "^3.0.0"
+djangocms-file = "^3.0.0"
+djangocms-picture = "^3.0.0"
+djangocms-video = "^3.0.0"
+djangocms-googlemap = "^2.0.0"
+djangocms-snippet = "^3.0.0"
+djangocms-style = "^3.0.0"
+django-parler = "^2.3"
+djangocms-bootstrap5 = "^0.1.0"
+python-decouple = "^3.6"
+
+[tool.poetry.dev-dependencies]
+django-debug-toolbar = "^3.2.4"
+black = "^22.1.0"
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

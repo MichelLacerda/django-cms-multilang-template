@@ -1,0 +1,7 @@
+{% load i18n cms_tags %}
+<{{ instance.tag }} {{ instance.attributes_str }}>
+    {% if instance.content %} {{instance.content|safe}} {% endif %}
+    {% for plugin in instance.child_plugin_instances %}
+    {% with forloop as parentloop %}{% render_plugin plugin %}{% endwith %}
+    {% endfor %}
+</{{ instance.tag }}>

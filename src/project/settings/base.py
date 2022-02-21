@@ -27,6 +27,7 @@ SECRET_KEY = config('SECRET_KEY', '')
 # Application definition
 
 INSTALLED_APPS = [
+    'apps.content',
     'plugins.tag',
     'basics',
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'filer',
     'easy_thumbnails',
     'mptt',
+    'parler',
     'djangocms_link',
     'djangocms_file',
     'djangocms_picture',
